@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#website_name {
+    color: white;
+    margin-top: 20px;
+}
+
+#cover_art {
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+#song_title {
+    color: white;
+    margin-top: 20px;
+}
+
+#song_artist {
+    color: white;
+    margin-top: 10px;
+}
+
+#lyrics {
+    color: white;
+    margin-top: 20px;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+}
