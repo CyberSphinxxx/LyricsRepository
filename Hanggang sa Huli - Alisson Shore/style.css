@@ -1,0 +1,127 @@
+body {
+    background-image: url(background_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main_title{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);
+}
+
+#img_cover{
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#main_lyrics {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        -1px -1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0),
+        1px 1px 0 rgb(0, 0, 0);
+}
+
+#lyrics_container{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(31, 31, 31, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+#music_control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audio-player {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    background: #61dafb;
+    border: none;
+    color: #282c34;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #21a1f1;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.seek-bar {
+    flex: 1;
+    margin: 0 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: #444;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #61dafb;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.seek-bar::-moz-range-thumb {
+    background: #61dafb;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#currentTime, #duration {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 10px;
+}
